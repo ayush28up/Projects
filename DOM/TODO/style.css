@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.main {
+    background-color: #15314b;
+    color: white;
+}
+
+.main, .input, .task {
+    border: 1px solid;
+}
+
+.input {
+    height: 20vh;
+    padding-top: 5vh;
+    /* text-align: center; */
+}
+
+.task {
+    min-height: 80vh;
+}
+
+.task-list {
+    margin: auto;
+    width: 40%;
+}
+.id-input {
+    height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.button {
+    margin:auto;
+    display: block;
+}
+
+.tasklist-item { 
+    font-size: 1.5rem;
+    list-style: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: #02203c;
+    margin-top: 10px;
+    height: 3rem;
+    text-align: center;
+    padding-top: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .tasklist,
+    .id-input {
+        width: 70%;
+    }
+}
