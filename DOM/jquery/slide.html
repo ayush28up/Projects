@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button class="slideup">slideUp</button>
+    <button class="slidedown">slideDown</button>
+    <button class="slidetoggle">slideToggle</button>
+    <div style="height: 300px;width: 300px; background-color: blue;">
+        hide and show with animation slide up and slide down
+    </div>
+
+    <script>
+        $(".slideup").click(function(){
+            $("div").slideUp(5000);
+        });
+        $(".slidedown").click(function(){
+            $("div").slideDown(5000);
+        });
+        $(".slidetoggle").click(function(){
+            $("div").slideToggle();
+        });
+
+    </script>
+
+</body>
+</html>

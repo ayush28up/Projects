@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--Creating and deleting the element
+    <button>create div</button>
+    <button class="1">remove div</button>
+
+    <script>
+        $("button").click(function(){
+            let div = $("<div></div>").text("created a element");
+            $("body").prepend(div);
+        })
+
+        $(".1").click(function(){
+            $("div").remove();
+        })
+    </script>  -->
+
+    <!--creating mmultiple elemnt
+    <button>create multiple elemnt</button>
+    <script>
+        $("button").click(function(e){
+            let div = $("<div></div>").text("hello i am div");
+            let p = $("<p></p>").text("hello i am paragraph");
+            $("body").prepend(div,p);
+        })
+    </script>  -->
+
+
+
+    <!--Empty the elements html-->
+    <div>
+        <p>hahahahha</p>
+        <h1>okay</h1>
+    </div>
+    <button>empty elemnt's html</button>
+    <script>
+        $("button").click(function(){
+            $("div").empty();
+        })
+    </script>
+    
+</body>
+</html>

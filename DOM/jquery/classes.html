@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .blue{
+            background-color: lightseagreen;
+        }
+        .red{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!--Adding a single class
+    <div style="height: 300px;width: 300px;">hellooooooooo</div>
+    <button>add class</button>
+    <script>
+        $("button").click(function(){
+            $("div").addClass("blue");
+        })
+    </script>-->
+    
+
+    <!--Adding mmultiple classes
+     <div style="height: 300px;width: 300px;">adding multiple classes</div>
+    <button>make it red</button>
+    <script>
+        $("button").click(function(){
+            $("div").addClass("blue red");
+        })
+    </script>  -->
+    
+
+    <!--  Removing class
+     <div style="height: 300px;width: 300px;" class="blue">removing class</div>
+    <button>make it red</button>
+    <script>
+        $("button").click(function(){
+            $("div").removeClass("blue");
+        })
+    </script>   -->
+
+    <!--toggle classes-->
+    <div style="height: 300px;width: 300px;" class="blue red">adding multiple classes</div>
+    <button>make it red</button>
+    <script>
+        $("button").click(function(){
+            $("div").toggleClass("red");
+        })
+    </script>  -->
+</body>
+</html>
