@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zira Tickets</title>
     <link rel="stylesheet" href="style.css">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
 </head>
 <body>
     <div class="container">
@@ -26,17 +28,39 @@
           </div>
             <div class="add-delete-container">
                 <div class="add">
-                    <span class="action-btn">add</span>
+                    <span class="material-icons action-btn">add</span>
                 </div>
                 <div class="delete">
-                    <span class="action-btn">delete</span>
+                    <span class="material-icons action-btn">delete</span>
                 </div>
             </div>
         </div>
         <div class="ticket-container">
+          <!--<div class="modal">
+             <div class="input" contenteditable="true" >
+                 <span class="placeholder">Enter your text here</span>
+             </div>
+             <div class="priority-list">
+                 <div class="pink-priority modal-filter active"></div>
+                 <div class="blue-priority modal-filter"></div>
+                 <div class="yellow-priority modal-filter"></div>
+                 <div class="green-priority modal-filter"></div>
+             </div>
+          </div>-->
 
+          <!--<div class="ticket active">
+              <div class="ticket-color ticket-color-"></div>
+              <div class="ticket-id"></div>
+              <div class="task">
+                 
+              </div>
+          </div>-->
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script>
+        let uid = new ShortUniqueId();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

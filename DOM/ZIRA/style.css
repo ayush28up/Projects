@@ -12,7 +12,11 @@
 .ticket-container{
     min-height: 88vh;
     background-color: white;
-    padding: 3rem;
+    position: relative;
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .filter-container, .add-delete-container{
     margin-top: 2vh;
@@ -28,7 +32,6 @@
 .add-delete-container{
     width: 9vw;
     display: flex;
-    padding: 0.7em;
 }
 .filter, .add, .delete{
     height: 100%;
@@ -48,33 +51,121 @@
    border-radius: 50%;
    width:33%;
    height: 34%;
+   cursor: pointer;
 }
-.pink{
+.pink, .pink-priority{
     background-color: pink;
 }
-.green{
+.green, .green-priority{
     background-color: green;
 }
 
-.yellow{
+.yellow, .yellow-priority{
     background-color: yellow;
 }
 
-.blue{
+.blue, .blue-priority{
     background-color:blue;
 }
 .action-btn{
-   width: 100%;
-   height: 100%;
+   width: 50%;
+   height: 50%;
    text-align: center;
-   color: white;
-   padding-top: 0.7rem;
-   font-size: 2rem;
+   background-color: white;
+   margin: calc(8vh * 0.25) calc(4.5vw * 0.25) calc(8vh*0.25);
 }
-
+.modal{
+    height:18rem;
+    width: 35rem;
+    background-color: white;
+    display: flex;
+    box-shadow: 0px 0px 50px 10px black;
+    position: absolute;
+    top: calc((88vh - 18rem) / 2);
+    left: calc((100vw - 35rem) / 2);
+}
+.input{
+    height: 100%;
+    width: 70%;
+}
+.priority-list{
+    height: 100%;
+    width: 30%;
+    background-color: grey;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modal-filter{
+    height: 20%;
+    width: 100%;
+}
 .action-btn:hover{
-    background-color:black;
+    cursor: pointer;
 }
 .filter:hover{
     background-color:black;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.filter.active{
+    background-color: black;
+}
+.modal-filter:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.add:hover, .delete:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.modal-filter.active{
+    border: 5px solid;
+}
+.input{
+    padding: 3rem;
+    outline: none;
+}
+.placeholder{
+    color: grey;
+}
+
+.ticket{
+    width:16rem;
+    height: 9rem;
+    background-color: whitesmoke;
+}
+
+.ticket.active{
+    box-shadow: 0 0 5px 3px;
+}
+
+.ticket-color{
+    height: 15%;
+    width: 100%;
+}
+
+.ticket-id{
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+    color: grey;
+}
+.task{
+    width: 100%;
+    height: 79%;
+    padding: 3%;
+}
+.ticket-color-yellow{
+    background-color: yellow;
+}
+.ticket-color-blue{
+    background-color: blue;
+}
+.ticket-color-green{
+    background-color: green;
+}
+.ticket-color-pink{
+    background-color: pink;
 }
