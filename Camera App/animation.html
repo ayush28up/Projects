@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .box{
+            height: 20rem;
+            width: 20rem;
+            margin: auto;
+            margin-top: calc((100vh - 20rem)/2); /*isse hamara jo div hai uska top left corner centre me ajyegaa*/
+            background-color:orange;
+            animation: scaler 2s infinite;
+        }
+        .box2{
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            position: fixed;
+            transform: translate(-50%,-50%);/*isse jo div ka top left corner tha uski jagah poora div centre me ajyegga..-50% ka mtlb humne div ko uski height ka 50% upr krdiya aur uski width ka 50% left krdiya..jisse poora div centre me agya*/ 
+            top: 50vh;
+            left: 50vw;
+            background-color: seagreen;
+            margin: auto;
+            animation: fader 2s infinite;
+        }
+        
+        @keyframes scaler {
+            0%{
+                transform: scale(1);
+                border-radius: 0%;
+            }
+           50%{
+                transform: scale(1.5);
+                border-radius: 50%;
+            }
+            100%{
+                transform: scale(1);
+                border-radius: 0%;
+            }
+        }
+       @keyframes fader {
+           0%{
+               opacity: 0;
+           }
+           50%{
+               opacity:1
+           }
+           100%{
+               opacity: 0;
+           }
+       }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>

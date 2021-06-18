@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    background-color: #fcff9e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fc466b' fill-opacity='0.22'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: black
+    ;
+}
+.media-card{
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+.media-container{
+    height: 80%;
+    width: 100%;
+    border: 1px solid;
+}
+.action-container{
+    height: 20%;
+    width: 100%;
+}
+.action-container button{
+    width: 100%;
+    height: 50%;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: white;
+}
+.media-gallery{
+    height: 100%;
+    width: 100%;
+}
+.download{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+.delete{
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}

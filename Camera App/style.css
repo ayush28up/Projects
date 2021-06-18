@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    
+}
+.video-container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+#record,#capture{
+    z-index: 3;
+    background-color: black;
+    border: white 5px solid;
+    position: fixed;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#record div,#capture div{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: auto;
+}
+#record div{
+    background-color: red;
+}
+#capture div{
+    background-color: white;
+}
+#record{
+    top: 40vh;
+}
+.capture-animation{
+    animation: inOut 0.6s;
+}
+.record-animation{
+    animation: inOut 1s infinite;
+}
+#capture{
+    top: 50vh;
+}
+
+@keyframes inOut {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.filter-container{
+    z-index: 3;
+    height: 25rem;
+    width:5rem;
+    background-color: red;
+    top:calc((100vh - 25rem)/2);
+    left: 2rem;
+    position: fixed;
+}
+
+.filter{
+    height:calc(25rem / 6);
+    width:100%;
+    border: 2px white solid;
+    background: url(img2.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    cursor: pointer;
+}
+.zoom-in-zoom-out-container{
+    height: 5rem;
+    width: 3rem;
+    background-color: red;
+    position:fixed;
+    right:2rem;
+    top: 3rem;
+    z-index: 3;
+}
+.zoom-in,.zoom-out{
+    height:calc(5rem / 2);
+    width:100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #2C3A47;
+    font-weight: bold;
+    color: honeydew;
+    cursor: pointer;
+}
+.filter-div{
+    height:100vh;
+    width:100vw;
+    top: 0;
+    position: fixed;
+}
+#gallery{
+    position: fixed;
+    right: 2rem;
+    z-index: 3;
+    height: 4rem;
+    width: 4rem;
+    bottom: 5rem;
+}

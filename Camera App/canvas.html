@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <canvas>
+    </canvas>
+    <script>
+        let canvas = document.querySelector("canvas");
+        canvas.height = window.innerHeight; //isse hum canvas ko hamare poore screen ka size de rhe h
+        canvas.width = window.innerWidth; //aur isse width..poore screen ki
+
+        let ctx = canvas.getContext("2d");//isse pata lgega ke jo hum draw krenge wo kis dimension ka hoga
+        let img = document.createElement("img")
+        img.src = "img.jpg"
+
+        //img.addEventListener("load",function(){
+            //ctx.drawImage(img,100,0,500,600);
+        //})
+        ctx.beginPath(); // isse hum ek new path start kr rhe hai
+        //ctx.moveTo(100,200); //jab bhi hum ek new path begin krenge hmesha humein uska ek starting point dena hoga..toh ye hum moveTo ki help se denge
+        //ctx.lineTo(300,400); //ye ek tarah se ending point hai jo bhi humne draw kara uska
+        //ctx.strokeStyle = "red"; //ye color hai jo bhi humne draw kara uska
+        //ctx.stroke(); //bina stroke ko call kiye kuch bhi visible nhi ho payega..isliye draw  krne ke baad hum stroke ko call krenge
+        //ctx.beginPath();//agr hum dobara begin path nhi krenge toh aage jitne bbhi changes krenge wo upr wale path me bhi apply honge
+        //ctx.moveTo(300,400);
+        //ctx.lineTo(600,200);
+        //ctx.lineWidth = 30; //jo hum line draw kr rhe hai usko width ko set krne ke liye
+        //ctx.strokeStyle = "black";
+        //ctx.stroke();
+        ctx.strokeRect(50,200,500,600)
+        ctx.fillStyle = "purple"
+        ctx.fillRect(100,100,400,500);
+
+
+    </script>
+</body>
+</html>
